@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace calculate
 {
-    class TwoTwoArgumentsFactory
+    class TwoArgumentsFactory
     {
         public static ITwoArgumentCalculator CreateCalculator(string calculateName)
         {
@@ -20,6 +16,10 @@ namespace calculate
                     return new multyplication();
                 case "division":
                     return new division();
+                case "buttonDegree":
+                    return new degree();
+                case "buttonDegreeFraction":
+                    return new degreeFracton();
                 default:
                     throw new Exception("Неизвестная операция");            }
        }

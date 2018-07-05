@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace calculate
@@ -24,30 +17,19 @@ namespace calculate
             double firstValue = Convert.ToDouble(firstValuetext);
             string secondValuetext = textBox2.Text;
             double secondValue = Convert.ToDouble(secondValuetext);
-            /*switch (((Button)sender).Name)
-            {
-                case "addition":
-                    double result = secondValue + firstValue;
-                    textBox3.Text = result.ToString();
-                    //выполнение операции 
-                    break;
-                case "sabtraction":
-                    result = firstValue - secondValue;
-                    textBox3.Text = result.ToString();
-                    //выполнение операции 
-                    break;
-                case "multyplication":
-                    result = secondValue * firstValue;
-                    textBox3.Text = result.ToString();
-                    break;
-                case "division":
-                    result = firstValue / secondValue;
-                    textBox3.Text = result.ToString();
-                    break;
-                default:
-                    throw new Exception("Неизвестная операция");
-            }
-        }*/
+            ITwoArgumentCalculator calculator = TwoArgumentsFactory.CreateCalculator(((Button) sender).Name);
+            double result = calculator.Calculate(firstValue, secondValue);
+            textBox3.Text = result.ToString();
 
+        }
+
+        private void OneClick(object sender, EventArgs e)
+        {
+            string thirdValueText = textBox4.Text;
+            double thirdValue = Convert.ToDouble(thirdValueText);
+            IOneArgumentCalculator calculator = CalculatorOneFactory.CreateCalculator(((Button)sender).Name);
+            double thirdValueResult = calculator.Calculate(thirdValue);
+            textBox4.Text = thirdValueResult.ToString();
+        }
     }
 }

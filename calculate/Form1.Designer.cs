@@ -38,6 +38,10 @@
             this.Sin = new System.Windows.Forms.Button();
             this.Cos = new System.Windows.Forms.Button();
             this.Tan = new System.Windows.Forms.Button();
+            this.buttonRadical = new System.Windows.Forms.Button();
+            this.buttonDegree = new System.Windows.Forms.Button();
+            this.buttonDegreeFraction = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // addition
@@ -110,7 +114,7 @@
             this.Sin.TabIndex = 7;
             this.Sin.Text = "sin";
             this.Sin.UseVisualStyleBackColor = true;
-            this.Sin.Click += new System.EventHandler(this.Click);
+            this.Sin.Click += new System.EventHandler(this.OneClick);
             // 
             // Cos
             // 
@@ -120,7 +124,7 @@
             this.Cos.TabIndex = 8;
             this.Cos.Text = "cos";
             this.Cos.UseVisualStyleBackColor = true;
-            this.Cos.Click += new System.EventHandler(this.Click);
+            this.Cos.Click += new System.EventHandler(this.OneClick);
             // 
             // Tan
             // 
@@ -130,13 +134,54 @@
             this.Tan.TabIndex = 9;
             this.Tan.Text = "tan";
             this.Tan.UseVisualStyleBackColor = true;
-            this.Tan.Click += new System.EventHandler(this.Click);
+            this.Tan.Click += new System.EventHandler(this.OneClick);
+            // 
+            // buttonRadical
+            // 
+            this.buttonRadical.Location = new System.Drawing.Point(2, 199);
+            this.buttonRadical.Name = "buttonRadical";
+            this.buttonRadical.Size = new System.Drawing.Size(75, 23);
+            this.buttonRadical.TabIndex = 10;
+            this.buttonRadical.Text = "Квадратный корень";
+            this.buttonRadical.UseVisualStyleBackColor = true;
+            this.buttonRadical.Click += new System.EventHandler(this.OneClick);
+            // 
+            // buttonDegree
+            // 
+            this.buttonDegree.Location = new System.Drawing.Point(84, 179);
+            this.buttonDegree.Name = "buttonDegree";
+            this.buttonDegree.Size = new System.Drawing.Size(75, 23);
+            this.buttonDegree.TabIndex = 11;
+            this.buttonDegree.Text = "Степень";
+            this.buttonDegree.UseVisualStyleBackColor = true;
+            this.buttonDegree.Click += new System.EventHandler(this.Click);
+            // 
+            // buttonDegreeFraction
+            // 
+            this.buttonDegreeFraction.Location = new System.Drawing.Point(248, 179);
+            this.buttonDegreeFraction.Name = "buttonDegreeFraction";
+            this.buttonDegreeFraction.Size = new System.Drawing.Size(75, 23);
+            this.buttonDegreeFraction.TabIndex = 12;
+            this.buttonDegreeFraction.Text = "1/степень";
+            this.buttonDegreeFraction.UseVisualStyleBackColor = true;
+            this.buttonDegreeFraction.Click += new System.EventHandler(this.Click);
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(140, 234);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(68, 20);
+            this.textBox4.TabIndex = 13;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(344, 292);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.buttonDegreeFraction);
+            this.Controls.Add(this.buttonDegree);
+            this.Controls.Add(this.buttonRadical);
             this.Controls.Add(this.Tan);
             this.Controls.Add(this.Cos);
             this.Controls.Add(this.Sin);
@@ -166,6 +211,10 @@
         private System.Windows.Forms.Button Sin;
         private System.Windows.Forms.Button Cos;
         private System.Windows.Forms.Button Tan;
+        private System.Windows.Forms.Button buttonRadical;
+        private System.Windows.Forms.Button buttonDegree;
+        private System.Windows.Forms.Button buttonDegreeFraction;
+        private System.Windows.Forms.TextBox textBox4;
     }
 }
 
