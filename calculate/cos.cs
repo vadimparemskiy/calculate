@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace calculate
 {
-    public class Sin : IOneArgumentCalculator
+    public class Cos : IOneArgumentCalculator
     {
         public double Calculate(double firstArgument)
         {
-            return System.Math.Sin(firstArgument);
+            return System.Math.Cos(firstArgument);
         }
 
     }

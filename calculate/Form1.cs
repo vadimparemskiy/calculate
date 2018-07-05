@@ -24,7 +24,7 @@ namespace calculate
             double firstValue = Convert.ToDouble(firstValuetext);
             string secondValuetext = textBox2.Text;
             double secondValue = Convert.ToDouble(secondValuetext);
-            switch (((Button)sender).Name)
+            /*switch (((Button)sender).Name)
             {
                 case "addition":
                     double result = secondValue + firstValue;
@@ -47,6 +47,7 @@ namespace calculate
                 default:
                     throw new Exception("Неизвестная операция");
             }
-        }
+        }*/
+
     }
 }

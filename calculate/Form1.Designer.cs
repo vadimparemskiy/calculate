@@ -35,11 +35,14 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.Sin = new System.Windows.Forms.Button();
+            this.Cos = new System.Windows.Forms.Button();
+            this.Tan = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // addition
             // 
-            this.addition.Location = new System.Drawing.Point(2, 85);
+            this.addition.Location = new System.Drawing.Point(2, 63);
             this.addition.Name = "addition";
             this.addition.Size = new System.Drawing.Size(75, 23);
             this.addition.TabIndex = 0;
@@ -49,7 +52,7 @@
             // 
             // sabtraction
             // 
-            this.sabtraction.Location = new System.Drawing.Point(100, 85);
+            this.sabtraction.Location = new System.Drawing.Point(85, 63);
             this.sabtraction.Name = "sabtraction";
             this.sabtraction.Size = new System.Drawing.Size(75, 23);
             this.sabtraction.TabIndex = 1;
@@ -60,7 +63,7 @@
             // multyplication
             // 
             this.multyplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.multyplication.Location = new System.Drawing.Point(2, 147);
+            this.multyplication.Location = new System.Drawing.Point(2, 92);
             this.multyplication.Name = "multyplication";
             this.multyplication.Size = new System.Drawing.Size(75, 23);
             this.multyplication.TabIndex = 2;
@@ -70,7 +73,7 @@
             // 
             // division
             // 
-            this.division.Location = new System.Drawing.Point(100, 147);
+            this.division.Location = new System.Drawing.Point(85, 92);
             this.division.Name = "division";
             this.division.Size = new System.Drawing.Size(75, 23);
             this.division.TabIndex = 3;
@@ -99,11 +102,44 @@
             this.textBox3.Size = new System.Drawing.Size(61, 20);
             this.textBox3.TabIndex = 6;
             // 
+            // Sin
+            // 
+            this.Sin.Location = new System.Drawing.Point(2, 136);
+            this.Sin.Name = "Sin";
+            this.Sin.Size = new System.Drawing.Size(75, 23);
+            this.Sin.TabIndex = 7;
+            this.Sin.Text = "sin";
+            this.Sin.UseVisualStyleBackColor = true;
+            this.Sin.Click += new System.EventHandler(this.Click);
+            // 
+            // Cos
+            // 
+            this.Cos.Location = new System.Drawing.Point(85, 136);
+            this.Cos.Name = "Cos";
+            this.Cos.Size = new System.Drawing.Size(75, 23);
+            this.Cos.TabIndex = 8;
+            this.Cos.Text = "cos";
+            this.Cos.UseVisualStyleBackColor = true;
+            this.Cos.Click += new System.EventHandler(this.Click);
+            // 
+            // Tan
+            // 
+            this.Tan.Location = new System.Drawing.Point(166, 136);
+            this.Tan.Name = "Tan";
+            this.Tan.Size = new System.Drawing.Size(75, 23);
+            this.Tan.TabIndex = 9;
+            this.Tan.Text = "tan";
+            this.Tan.UseVisualStyleBackColor = true;
+            this.Tan.Click += new System.EventHandler(this.Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(245, 217);
+            this.ClientSize = new System.Drawing.Size(344, 292);
+            this.Controls.Add(this.Tan);
+            this.Controls.Add(this.Cos);
+            this.Controls.Add(this.Sin);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -127,6 +163,9 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button Sin;
+        private System.Windows.Forms.Button Cos;
+        private System.Windows.Forms.Button Tan;
     }
 }
 
