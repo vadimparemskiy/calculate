@@ -5,6 +5,13 @@ namespace calculate
 {
     class CalculatorOneFactory 
     {
+        /// <summary>
+        /// Switch One Argument Calculator
+        /// </summary>
+        /// <param name="calculateName"></param>
+        /// <returns>
+        /// Method
+        /// </returns>
         public static IOneArgumentCalculator CreateCalculator(string calculateName)
         {
             switch (calculateName)
