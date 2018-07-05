@@ -9,8 +9,8 @@ namespace calculate.Tests.ArgumentsTest
         public class cosTest
         {
             [TestCase(0, 1)]
-            [TestCase(90, 0)]
-            [TestCase(180, -1)]
+            [TestCase(-1, 0)]
+            [TestCase(0, -1)]
             public void CalculateCosTestStrong(double OneArgument, double expected)
             {
                 IOneArgumentCalculator calculator = new cos();

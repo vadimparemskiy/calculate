@@ -8,7 +8,7 @@ namespace calculate.Tests.ArgumentsTest
     public class degreeTest
     {
         [TestCase(5, 2, 25)]
-        [TestCase(10, 2, 10)]
+        [TestCase(10, 2, 100)]
         [TestCase(15, 2, 225)]
         public void CalculateDegreeTestStrong(double firstValue, double secondValue, double expected)
         {

@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using System;
+using NUnit.Framework;
 
 
 namespace calculate.Tests.ArgumentsTest
@@ -16,6 +17,13 @@ namespace calculate.Tests.ArgumentsTest
             double result = calculator.Calculate(firstValue, secondValue);
             Assert.AreEqual(expected, result);
 
+        }
+
+        [Test]
+        public void CalculateDivTestException()
+        {
+            ITwoArgumentCalculator calculator = TwoArgumentsFactory.CreateCalculator("division");
+            Assert.Throws<Exception>(() => calculator.Calculate(7,0));
         }
     }
 }
