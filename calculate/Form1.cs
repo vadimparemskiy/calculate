@@ -28,7 +28,7 @@ namespace calculate
             string thirdValueText = textBox4.Text;
             double thirdValue = Convert.ToDouble(thirdValueText);
             IOneArgumentCalculator calculator = CalculatorOneFactory.CreateCalculator(((Button)sender).Name);
-            double thirdValueResult = calculator.Calculate(thirdValue);
+            double thirdValueResult = calculator.CalculateArg(thirdValue);
             textBox4.Text = thirdValueResult.ToString();
         }
     }

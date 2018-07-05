@@ -2,7 +2,7 @@
 
 namespace calculate
 {
-    class degree : ITwoArgumentCalculator
+    public class degree : ITwoArgumentCalculator
     {
         public double Calculate(double firstArgument, double secondArgument)
         {

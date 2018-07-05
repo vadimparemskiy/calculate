@@ -5,10 +5,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B1D5A066-D4F4-4268-847C-6092731C4904}</ProjectGuid>
+    <ProjectGuid>{D1814507-94CC-4BEC-A3CF-5E0D2416DE8E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>calculate</RootNamespace>
-    <AssemblyName>calculate</AssemblyName>
+    <RootNamespace>calculate.Tests</RootNamespace>
+    <AssemblyName>calculate.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -51,31 +51,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="OneArgument\radical.cs" />
-    <Compile Include="TwoArgument\addition.cs" />
-    <Compile Include="OneArgument\CalculatorOneFactory.cs" />
-    <Compile Include="OneArgument\cos.cs" />
-    <Compile Include="TwoArgument\degree.cs" />
-    <Compile Include="TwoArgument\degreeFraction.cs" />
-    <Compile Include="TwoArgument\division.cs" />
+    <Compile Include="ArgumentsTest\additionTest.cs" />
+    <Compile Include="ArgumentsTest\cosTest.cs" />
+    <Compile Include="ArgumentsTest\degreeFractionTest.cs" />
+    <Compile Include="ArgumentsTest\degreeTest.cs" />
+    <Compile Include="ArgumentsTest\divisionTest.cs" />
+    <Compile Include="ArgumentsTest\multyplicationTest.cs" />
+    <Compile Include="ArgumentsTest\radicalTest.cs" />
+    <Compile Include="ArgumentsTest\sabtractionTest.cs" />
+    <Compile Include="ArgumentsTest\sinTest.cs" />
+    <Compile Include="ArgumentsTest\tanTest.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="TwoArgument\ICalculateTwoArguments.cs" />
-    <Compile Include="OneArgument\IOneArgumentCalculator.cs" />
-    <Compile Include="TwoArgument\multyplication.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TwoArgument\sabtraction.cs" />
-    <Compile Include="OneArgument\sin.cs" />
-    <Compile Include="OneArgument\tan.cs" />
-    <Compile Include="TwoArgument\TwoArgumentsFactory.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -98,6 +91,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FactoryTest\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\calculate\calculate.csproj">
+      <Project>{b1d5a066-d4f4-4268-847c-6092731c4904}</Project>
+      <Name>calculate</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

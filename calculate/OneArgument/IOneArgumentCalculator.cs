@@ -2,8 +2,8 @@
 
 namespace calculate
 {
-    interface IOneArgumentCalculator
+   public  interface IOneArgumentCalculator
     {
-        double Calculate(double OneArgument);
+        double CalculateArg(double OneArgument);
     }
 }

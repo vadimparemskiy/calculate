@@ -19,7 +19,7 @@ namespace calculate
                 case "buttonDegree":
                     return new degree();
                 case "buttonDegreeFraction":
-                    return new degreeFracton();
+                    return new degreeFraction();
                 default:
                     throw new Exception("Неизвестная операция");            }
        }

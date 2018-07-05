@@ -4,7 +4,7 @@ namespace calculate
 {
     public class tan : IOneArgumentCalculator
     {
-        public double Calculate(double oneArgument)
+        public double CalculateArg(double oneArgument)
         {
             return System.Math.Tan(oneArgument);
         }

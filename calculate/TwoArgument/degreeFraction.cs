@@ -1,7 +1,7 @@
 ﻿
 namespace calculate
 {
-    class degreeFracton : ITwoArgumentCalculator
+    public class degreeFraction : ITwoArgumentCalculator
     {
         public double Calculate(double firstArgument, double secondArgument)
         {
