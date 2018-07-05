@@ -3,7 +3,7 @@
 
 namespace calculate
 {
-    class CalculatorOneFactory 
+    public class CalculatorOneFactory 
     {
         /// <summary>
         /// Switch One Argument Calculator
